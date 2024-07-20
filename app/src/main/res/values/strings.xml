@@ -6,7 +6,7 @@
     <string name="analyze">Analisis Teks</string>
     <string name="empty_image_warning">Silakan masukkan berkas gambar terlebih dahulu.</string>
     <string name="result">Hasil Analisis</string>
-    <string name="no_text_recognized">No text recognized!</string>
+    <string name="no_text_recognized">Tidak ada teks yang dikenali!</string>
     <string name="translate">Terjemahkan</string>
     <string name="downloading_model_fail">Model gagal diunduh</string>
 </resources>

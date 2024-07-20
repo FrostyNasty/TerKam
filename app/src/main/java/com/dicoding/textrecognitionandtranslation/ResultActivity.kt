@@ -5,10 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.dicoding.textrecognitionandtranslation.databinding.ActivityResultBinding
 import com.google.mlkit.common.model.DownloadConditions
 import com.google.mlkit.nl.translate.TranslateLanguage
@@ -32,13 +29,12 @@ class ResultActivity : AppCompatActivity() {
         }
 
         val detectedText = intent.getStringExtra(EXTRA_RESULT)
-        binding.resultText.text = detectedText
+        binding.resultText.setText(detectedText)
 
         binding.translateButton.setOnClickListener {
             binding.progressIndicator.visibility = View.VISIBLE
-            translateText(detectedText)
+            translateText(binding.resultText.text.toString())
         }
-
     }
 
     private fun translateText(detectedText: String?) {

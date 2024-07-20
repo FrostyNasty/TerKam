@@ -16,7 +16,7 @@
             android:layout_height="400dp"
             android:scaleType="fitCenter" />
 
-        <TextView
+        <EditText
             android:id="@+id/result_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
