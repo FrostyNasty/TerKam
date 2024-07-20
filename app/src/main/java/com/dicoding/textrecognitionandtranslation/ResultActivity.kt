@@ -45,7 +45,6 @@ class ResultActivity : AppCompatActivity() {
         val indonesianEnglishTranslator = Translation.getClient(options)
 
         val conditions = DownloadConditions.Builder()
-            .requireWifi()
             .build()
         indonesianEnglishTranslator.downloadModelIfNeeded(conditions)
             .addOnSuccessListener {
