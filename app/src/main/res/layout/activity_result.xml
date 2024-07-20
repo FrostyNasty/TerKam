@@ -14,7 +14,8 @@
             android:id="@+id/result_image"
             android:layout_width="match_parent"
             android:layout_height="400dp"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_place_holder"/>
 
         <EditText
             android:id="@+id/result_text"
